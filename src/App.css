@@ -36,3 +36,34 @@ V.App {
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  display: flex;
+  position: static;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: beige;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__logo--img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

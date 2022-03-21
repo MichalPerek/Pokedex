@@ -1,4 +1,5 @@
 import { useContext, useState, useEffect } from "react";
+import Navbar from "./Navbar";
 import Pokemons from "./Pokemons";
 
 const Display = () => {
@@ -82,6 +83,7 @@ const Display = () => {
   return (
     <>
       <div>
+        <Navbar />
         <Pokemons pokemons={pokemons} />
         <button className="button__loadMore" onClick={handleClickBtn}>
           Load more!

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Pokemon = ({ name, type, sprites, weight, height }) => {
+const Pokemon = ({ id, name, type, sprites, weight, height }) => {
   //useState hook to control additional data displayed
 
   const [moreInfo, setMoreInfo] = useState(false);
@@ -13,6 +13,7 @@ const Pokemon = ({ name, type, sprites, weight, height }) => {
 
   //Object to store passed props
   const localPokemon = {
+    id: id,
     name: name,
     type: type,
     sprites: sprites,
@@ -26,7 +27,10 @@ const Pokemon = ({ name, type, sprites, weight, height }) => {
         <img src={localPokemon.sprites} alt=""></img>
       </div>
       <div>
-        <h1>{localPokemon.name}</h1>
+        <div>
+          <h1>{localPokemon.id}</h1>
+          <h1> {localPokemon.name}</h1>
+        </div>
 
         <div>
           type: {localPokemon.type}
