@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 
 export default function Navbar() {
   //Function to handle click event on top button
@@ -40,7 +40,7 @@ export default function Navbar() {
       <div className="navbar__buttons">
         <button onClick={handleTopBtn}>Top</button>
         <button onClick={handleBottomBtn}>Bottom</button>
-        <button>Display mode</button>
+        {/* <button>Display mode</button> */}
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Pokemons from "./Pokemons";
+import Footer from "./Footer";
 
 const Display = () => {
   //useState hook to log error and message for that error
@@ -75,21 +76,19 @@ const Display = () => {
   };
 
   //Function to handle button click
-  const handleClickBtn = () => {
+  const handleLoadMore = () => {
     console.log("button clicked");
     loadMorePokemons();
   };
 
   return (
-    <>
-      <div>
-        <Navbar />
+    <div className="app__container">
+      <Navbar />
+      <div className="container__main">
         <Pokemons pokemons={pokemons} />
-        <button className="button__loadMore" onClick={handleClickBtn}>
-          Load more!
-        </button>
+        <Footer data={handleLoadMore} />
       </div>
-    </>
+    </div>
   );
 };
 
