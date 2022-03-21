@@ -67,10 +67,25 @@ const Display = () => {
     fetchDataStep1();
   }, []);
 
+  //Function for button to load more pokemons
+
+  const loadMorePokemons = () => {
+    fetchDataStep1();
+  };
+
+  //Function to handle button click
+  const handleClickBtn = () => {
+    console.log("button clicked");
+    loadMorePokemons();
+  };
+
   return (
     <>
       <div>
         <Pokemons pokemons={pokemons} />
+        <button className="button__loadMore" onClick={handleClickBtn}>
+          Load more!
+        </button>
       </div>
     </>
   );
