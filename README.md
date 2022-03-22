@@ -40,6 +40,7 @@ Create an interactive catalogue of Pokemon using ‘Pokémon API’ (https://pok
 # 6. Known bugs:
 
 1. Sometimes pokemon load out of order, first is ID 2, then ID 1, ID 3, etc. Refreshing page fixes that.
+2. Page is not fully responsive on mobile devices - navbar works fine, pokemon card too, but the image and text content is clipped. 
 
 # 7. Valuable resources I took inspiration from:
 
