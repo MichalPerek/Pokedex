@@ -1,5 +1,7 @@
 import { useContext, useState, useEffect } from "react";
+import Navbar from "./Navbar";
 import Pokemons from "./Pokemons";
+import Footer from "./Footer";
 
 const Display = () => {
   //useState hook to log error and message for that error
@@ -67,12 +69,26 @@ const Display = () => {
     fetchDataStep1();
   }, []);
 
+  //Function for button to load more pokemons
+
+  const loadMorePokemons = () => {
+    fetchDataStep1();
+  };
+
+  //Function to handle button click
+  const handleLoadMore = () => {
+    console.log("button clicked");
+    loadMorePokemons();
+  };
+
   return (
-    <>
-      <div>
+    <div>
+      <Navbar />
+      <div className="container__main">
         <Pokemons pokemons={pokemons} />
+        <Footer data={handleLoadMore} />
       </div>
-    </>
+    </div>
   );
 };
 

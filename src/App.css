@@ -1,38 +1,190 @@
-V.App {
-  text-align: center;
+/* COLORS PALETTE AS VARIABLES */
+
+:root {
+  --p1: #db5461;
+  --p1_1: #db5462d2;
+  --p1_2: #db546292;
+  --p2: #686963;
+  --p3: #8aa29e;
+  --p3_1: #8aa29e78;
+  --p4: #3d5467;
+  --p5: #f1edee;
+  --p5_1: #cccccc;
+
+  --p6: #fbf8f1;
+
+  --p7: rgb(119, 101, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* BODY STYLES */
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+  background-color: var(--p5);
+  /* background: linear-gradient(to right top, var(--p5_1), var(--p5)); */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAVBAR STYLES */
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  position: static;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10%;
+  background-color: var(--p1);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar__logo {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  background-color: var(--p4);
+  color: var(--p6);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar__logo--title {
+  padding-right: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar__logo--img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.navbar__buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.navbar__buttonContainer--button {
+  padding: 15px;
+  margin: 10px;
+  background-color: var(--p1);
+  color: var(--p6);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border-style: none;
+  letter-spacing: 5px;
+  text-align: center;
+  width: auto;
+  outline: none;
+}
+
+.navbar__buttonContainer--button:hover {
+  background-color: var(--p2);
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+/* CONTAINER STYLES */
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.container__pokemonList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  gap: 5%;
+  padding: 20px;
+  margin: 100px 80px 50px 80px;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8%;
+  margin-bottom: 5%;
+}
+
+.container__footer--button {
+  padding: 15px;
+  margin: 10px;
+  background-color: var(--p2);
+  color: var(--p6);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border-style: none;
+  letter-spacing: 5px;
+  text-align: center;
+  width: auto;
+  outline: none;
+}
+
+.container__footer--button:hover {
+  background-color: var(--p1);
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+/* POKEMON CARD */
+
+.pokemonCard {
+  background-color: var(--p3_1);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 25px;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-items: center;
+}
+
+.pokemonCard:hover {
+  background-color: var(--p1_2);
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+.pokemonCard__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: contain;
+}
+
+.pokemonCard__content--img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.pokemonCard__content--info {
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 3px;
 }
