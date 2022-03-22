@@ -37,7 +37,11 @@ Create an interactive catalogue of Pokemon using ‘Pokémon API’ (https://pok
 6. Add Redux state management,
 7. Rewrite code for data fetching with axios,
 
-# 6. Valuable resources I took inspiration from:
+# 6. Known bugs:
+
+1. Sometimes pokemon load out of order, first is ID 2, then ID 1, ID 3, etc. Refreshing page fixes that.
+
+# 7. Valuable resources I took inspiration from:
 
     Tutorials on how to work with PokeApi:
 
