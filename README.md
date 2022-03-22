@@ -39,6 +39,7 @@
   4. Add background color to Pokemon card that is corresponding with this pokemon's sprite (eg. for sprite == water, background is blue, etc).
   5. Rewrite with TypeScript,
   6. Add Redux state management,
+  7. Learn fetching with axios,
   
   
   # 6. Valuable resources i took inspiration from:
