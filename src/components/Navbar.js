@@ -35,11 +35,21 @@ export default function Navbar() {
           src="https://www.picng.com/upload/pokeball/png_pokeball_43534.png"
           alt=""
         />
-        <div>Michal's Pokedex</div>
+        <div className="navbar__logo--title">Michal's Pokedex</div>
       </div>
-      <div className="navbar__buttons">
-        <button onClick={handleTopBtn}>Top</button>
-        <button onClick={handleBottomBtn}>Bottom</button>
+      <div className="navbar__buttonContainer">
+        <button
+          onClick={handleTopBtn}
+          className="navbar__buttonContainer--button"
+        >
+          Go to top
+        </button>
+        <button
+          onClick={handleBottomBtn}
+          className="navbar__buttonContainer--button"
+        >
+          Go to bottom
+        </button>
         {/* <button>Display mode</button> */}
       </div>
     </div>

@@ -82,7 +82,7 @@ const Display = () => {
   };
 
   return (
-    <div className="app__container">
+    <div>
       <Navbar />
       <div className="container__main">
         <Pokemons pokemons={pokemons} />

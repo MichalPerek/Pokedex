@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = (props) => {
   return (
-    <div className="footer">
-      <button className="button__loadMore" onClick={props.data}>
+    <div className="container__footer">
+      <button className="container__footer--button" onClick={props.data}>
         Load more!
       </button>
     </div>

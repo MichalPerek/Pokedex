@@ -9,7 +9,7 @@ const Pokemons = ({ pokemons }) => {
           id={pokemon.id}
           name={pokemon.name}
           type={pokemon.types[0].type.name}
-          sprites={pokemon.sprites.front_default}
+          sprites={pokemon.sprites.other.dream_world.front_default}
           weight={pokemon.weight}
           height={pokemon.height}
         ></Pokemon>

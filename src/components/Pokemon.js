@@ -22,24 +22,36 @@ const Pokemon = ({ id, name, type, sprites, weight, height }) => {
   };
 
   return (
-    <div onClick={displayMoreInfo}>
-      <div>
-        <img src={localPokemon.sprites} alt=""></img>
-      </div>
-      <div>
-        <div>
-          <h1>{localPokemon.id}</h1>
-          <h1> {localPokemon.name}</h1>
-        </div>
+    <div className="pokemonCard" onClick={displayMoreInfo}>
+      <div className="pokemonCard__content">
+        <img
+          className="pokemonCard__content--img"
+          src={localPokemon.sprites}
+          alt=""
+        ></img>
 
         <div>
-          type: {localPokemon.type}
-          {moreInfo && (
-            <>
-              <div>weight: {localPokemon.weight} lbs</div>
-              <div>height: {localPokemon.height} in </div>
-            </>
-          )}
+          <div className="pokemonCard__content--title">
+            <h1>ID: {localPokemon.id}</h1>
+            <h1> {localPokemon.name.toUpperCase()}</h1>
+          </div>
+
+          <div className="pokemonCard__content--info">
+            <b>type:</b> {localPokemon.type}
+            {moreInfo && (
+              <>
+                <div>
+                  {" "}
+                  <b>weight:</b> {localPokemon.weight} lbs
+                </div>
+                <div>
+                  {" "}
+                  <b>height: </b>
+                  {localPokemon.height} in{" "}
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>
