@@ -37,7 +37,7 @@ Create an interactive catalogue of Pokemon using ‘Pokémon API’ (https://pok
 6. Add Redux state management,
 7. Rewrite code for data fetching with axios,
 
-# 6. Valuable resources i took inspiration from:
+# 6. Valuable resources I took inspiration from:
 
     Tutorials on how to work with PokeApi:
 
