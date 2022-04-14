@@ -8,6 +8,10 @@ Create an interactive catalogue of Pokemon using ‘Pokémon API’ (https://pok
 2. Display properties for each Pokemon: ‘name’, `type` and ‘sprite’,
 3. On click - display additional data: 'weight' and 'height' for selected Pokemon.
 
+## Preview:
+
+https://glittering-piroshki-45c80d.netlify.app/
+
 # 2. Task approach:
 
     Simple one - page app, with static navigation bar containing two buttons (scroll to top, and scroll to bottom), and an additional button below list of currenlty       loaded Pokemon. Clicking on that button results in additional 20 pokemons data added to the screen. Basic CSS styling & transitions.
@@ -21,9 +25,6 @@ Create an interactive catalogue of Pokemon using ‘Pokémon API’ (https://pok
 
 # 4. Web app screen shots:
 
-## Preview:
-
-https://glittering-piroshki-45c80d.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/100487510/159385184-0044f915-808c-4bd9-8c7b-44749a652075.png)
 
