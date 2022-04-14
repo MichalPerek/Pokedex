@@ -21,6 +21,10 @@ Create an interactive catalogue of Pokemon using ‘Pokémon API’ (https://pok
 
 # 4. Web app screen shots:
 
+## Preview:
+
+https://glittering-piroshki-45c80d.netlify.app/
+
 ![image](https://user-images.githubusercontent.com/100487510/159385184-0044f915-808c-4bd9-8c7b-44749a652075.png)
 
 ![image](https://user-images.githubusercontent.com/100487510/159385212-cfc97b75-1981-4c00-bd3c-90a4fb8fae75.png)
